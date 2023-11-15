@@ -1,0 +1,82 @@
+/* cor de fundo, tipo de letra e cor do texto */
+body {
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* justificação do cabeçalho */
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+/* cor dos textos tipo a */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Cor fixa do link acessado */
+.navegacao a.linkAtivo {
+  color: #298ed1;
+}
+/* tamanho da fonte dos links do cabeçalho  */
+nav a {
+  font-size: 20px;
+}
+/* cor dos links do cabeçalho ao passar o mouse por cima */
+nav a:hover {
+  color: #298ed1;
+}
+/* justificação da imagem do cabeçalho */
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #20beda;
+}
+/* alinhamento do header */
+.center {
+  text-align: center;
+}
+/* cor dos textos h1 */
+.center h1 {
+  color: #20beda;
+}
+/* Alinhamento do texto justificado */
+p {
+  text-align: justify;
+}
+/* justificação dos logos */
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+/* cor e alinhamento dos links */
+footer a {
+  margin: 20px;
+  text-align: center;
+}
+/* cor e alinhamento dos textos dos links */
+footer i {
+  margin: 20px;
+  text-align: center;
+  color: #ececec;
+}
+/* cor e alinhamento dos textos principais */
+footer p {
+  margin-top: 2px;
+  text-align: center;
+  color: #757879;
+}
+/* distancia dos links do cabeçalho */
+.container {
+  padding: 0px 50px;
+  background-color: linear-gradient(rgba(255, 255, 255, 0));
+}
