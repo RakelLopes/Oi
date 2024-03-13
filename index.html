@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
     <head>
         <meta charset="UTF-8">
@@ -8,6 +8,8 @@
         <title>Sobre mim</title> <!-- Nome da página -->
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="reveal.js" defer></script>
     </head>
     <!-- Cabeçalho da página -->
     <body>
@@ -27,43 +29,51 @@
             </nav>
 
             <header>
-                <div class="center">
-                    <img src='./img/RaquelLopes.png'></img>
-                    <h1>Raquel Lopes</h1>
+                <div class="center effect-header">
+                    <img src='./img/RaquelLopes.png'></img><br><br>
+                    <div class="trilho" id="trilho">
+                        <div class="indicador" id="indicador"></div>
+                    </div>
+                </div><br>
+                <div class="effect-middle">
+                        <h1>Raquel Lopes</h1>
                     <h2>Estudante de Desenvolvimento de Sistemas</h2>
                 </div>
+                
             </header>
     <!-- Fim do cabeçalho da página -->
         <main>
-            <section>
-                <h3>Sobre mim</h3>
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tenho uma personalidade mais independente e autônoma, gosto de trabalhar sozinha, pois tenho maior facilidade em me concentrar em minhas tarefas dessa forma, possivelmente por conta de ser um tanto retraída, no entando tenho uma boa base comunicativa, o que me trás certa facilidade para trabalhar em equipe. <br><br>
+            <div class="group effect-top">
+                <section>
+                    <h3>Sobre mim</h3><br>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tenho uma personalidade mais independente e autônoma, gosto de trabalhar sozinha, pois tenho maior facilidade em me concentrar em minhas tarefas dessa forma, possivelmente por conta de ser um tanto retraída, no entando tenho uma boa base comunicativa, o que me trás certa facilidade para trabalhar em equipe. <br><br>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sou uma pessoa empenhada e comprometida com o meu estudo, busco aprender mais e me desenvolver pessoal e profissionalmente a todo momento. Estou <span style="text-decoration: line-through;">quase</span> sempre aberta a novos desafios e oportunidades de crescimento.
-                </p>
-            </section>
-            <section>
-                <h3>Formação</h3>
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sou Técnica de enfermagem, buscando novos ares na área de Desenvolvimento de sistema, pois apesar de ter uma grande paixão pela área da saúde, este não é um lugar que combina comigo, por melhor que eu faça meu trabalho com amor, nunca senti que estava no lugar certo, já com DS, comecei a estudar de forma autônoma por curiosidade, e acabei tendo uma sensação de pertencimento, e decidi então deixar para trás minha formação anterior, e buscar uma nova, pela qual darei o meu melhor para me desenvolver e aprimorar minhas habilidades para crescer profissional e pessoalmente.
-                </p>
-            </section>
-            <section>
-                <h3>Cursos</h3>
-                <ul>
-                    <li>
-                        <p>
-                            Inglês - Fluênte  <br>
-                            Francês - Básico <br>
-                            Espanhol - Básico <br>
-                            Office - Intermediário <br>
-                            Técnic de enfermagem - Concluído <br>
-                            Técnico em Desenvolvimento de Sistemas - Cursando
-                        </p>
-                    </li>
-                </ul>
-            </section>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sou uma pessoa empenhada e comprometida com o meu estudo, busco aprender mais e me desenvolver pessoal e profissionalmente a todo momento. Estou <span style="text-decoration: line-through;">quase</span> sempre aberta a novos desafios e oportunidades de crescimento.
+                    </p>
+                </section>
+                <section>
+                    <h3>Formação</h3><br>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sou Técnica de enfermagem, buscando novos ares na área de Desenvolvimento de sistema, pois apesar de ter uma grande paixão pela área da saúde, este não é um lugar que combina comigo, por melhor que eu faça meu trabalho com amor, nunca senti que estava no lugar certo, já com DS, comecei a estudar de forma autônoma por curiosidade, e acabei tendo uma sensação de pertencimento, e decidi então deixar para trás minha formação anterior, e buscar uma nova, pela qual darei o meu melhor para me desenvolver e aprimorar minhas habilidades para crescer profissional e pessoalmente.
+                    </p>
+                </section>
+                <section>
+                    <h3>Cursos</h3>
+                    <ul>
+                        <li>
+                            <p>
+                                Inglês - Fluênte  <br>
+                                Francês - Básico <br>
+                                Espanhol - Básico <br>
+                                Office - Intermediário <br>
+                                Técnic de enfermagem - Concluído <br>
+                                Técnico em Desenvolvimento de Sistemas - Cursando
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
             <footer>
               <address>
                   <p>'Na minha máquina funciona'<br>
@@ -72,7 +82,6 @@
           </footer>
         </main>
     </div>
-
+    <script src="main.js"></script>
 </body>
-
 </html>

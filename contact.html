@@ -6,7 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title><!-- Nome da página -->
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="reveal.js" defer></script>
     </head>
     <!-- Cabeçalho da página -->
     <body>
@@ -25,31 +27,40 @@
                 </ul>
             </nav>
 
-            <header class="center">
-                <div>
-                    <img src='./img/RaquelLopes.png'></img>
+            <header>
+                <div class="center effect-header">
+                    <img src='./img/RaquelLopes.png'></img><br><br>
+                    <div class="trilho" id="trilho">
+                        <div class="indicador" id="indicador"></div>
+                    </div>
+                </div><br>
+                <div class="effect-middle">
+                    <h1>Entre em contato comigo!</h1>
                 </div>
-                <h1>Entre em contato comigo!</h1>
-            </header>
+            </header><br><br>
             <!-- Fim do cabeçalho da página -->
             <!-- Links para contato, com redirecionamento em outra página -->
-            <footer>
-                <a href="https://github.com/RakelLopes" target="_blank" rel="noopener noreferrer">
-                    <img src='./img/github-icon-svgrepo-com.svg'></img>
-                    <p><i>Github</i></p>
-                </a>
-                <a href="https://t.me/Keelzera" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/telegram-svgrepo-com.svg"></img>
-                    <p><i>Telegram</i></p>
-                </a>
-                <a href="https://www.linkedin.com/in/raquel-lopes-125b21274/" target="_blank" rel="noopener noreferrer">
-                    <img src='./img/linkedin-outline-svgrepo-com.svg'></img>
-                    <p><i>Linkedin</i></p>
-                </a>
-                <a href="https://discordapp.com/users/Keelzera#4022" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/discord-icon-svgrepo-com.svg"></img>
-                    <p><i>Discord</i></p>
-                </a>
-            </footer>
+            <div class="effect-top">
+                <footer>
+                    <a href="https://github.com/RakelLopes" target="_blank" rel="noopener noreferrer">
+                        <img src='./img/github-icon-svgrepo-com.svg'></img>
+                        <p><i>Github</i></p>
+                    </a>
+                    <a href="https://t.me/Keelzera" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/telegram-svgrepo-com.svg"></img>
+                        <p><i>Telegram</i></p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/raquel-lopes-125b21274/" target="_blank" rel="noopener noreferrer">
+                        <img src='./img/linkedin-outline-svgrepo-com.svg'></img>
+                        <p><i>Linkedin</i></p>
+                    </a>
+                    <a href="https://discordapp.com/users/Keelzera#4022" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/discord-icon-svgrepo-com.svg"></img>
+                        <p><i>Discord</i></p>
+                    </a>
+                </footer>
+            </div>
         </div>
-    </body
+        <script src="main.js"></script>
+    </body>
+</html>

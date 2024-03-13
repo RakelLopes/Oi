@@ -6,7 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hobbies</title> <!-- Nome da página -->
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="reveal.js" defer></script>
     </head>
     <!-- Cabeçalho da página -->
     <body>
@@ -25,35 +27,42 @@
                 </ul>
             </nav>
 
-            <header class="center">
-                <div>
-                    <img src='./img/RaquelLopes.png'></img>
+            <header>
+                <div class="center effect-header">
+                    <img src='./img/RaquelLopes.png'></img><br><br>
+                    <div class="trilho" id="trilho">
+                        <div class="indicador" id="indicador"></div>
+                    </div>
+                </div><br>
+                <div class="effect-middle">
+                    <h1>Conheça um pouco sobre mim</h1>
                 </div>
-                <h1>Conheça um pouco sobre mim</h1>
-            </header>
+            </header><br><br><br>
     <!-- Fim do cabeçalho da página -->
         <main>
-            <section>
-                <h3>Música</h3>
-                <p>
-                    Em primeiro lugar, amo ouvir música. Passo a maior parte do meu dia de fones, com todo tipo de música que me sentir afim de ouvir no momento, simplesmente não imagino meu dia sem música para me distrair, entreter ou me ajudar a focar.
-                </p>
-            </section>
-            <section>
-                <h3>Pet</h3>
-                <p>
-                    Em segundo lugar, fica brincar com o meu gato, que amo de mais. Uma das melhores partes do meu dia, é quando ele deita no meu colo e eu posso passar a próxima hora só acariciando ele e recebendo afeto de volta, com as patinhas dele amassando minha roupa, como se estivesse me fazendo um pãozinho. 
-                </p>
-            </section>
-            <section>
-                <h3>Academia</h3>
-                <p>
-                    Em terceiro lugar, gosto de ir para a academia, sinto que quando estou com meus fones, carregando pesos que meu cérebro julgariam impossíveis, me faz sentir mais contente comigo mesma, principalmente quando vejo os resultados fisicos e emocionais que isso me trás, é um dos sentimentos pelo qual acredito que vale a pena viver.
-                </p>
-            </section>
+            <div class="group effect-top">
+                <section>
+                    <h3>Música</h3><br>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em primeiro lugar, amo ouvir música. Passo a maior parte do meu dia de fones, com todo tipo de música que me sentir afim de ouvir no momento, simplesmente não imagino meu dia sem música para me distrair, entreter ou me ajudar a focar.
+                    </p>
+                </section>
+                <section>
+                    <h3>Pet</h3><br>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em segundo lugar, fica brincar com o meu gato, que amo de mais. Uma das melhores partes do meu dia, é quando ele deita no meu colo e eu posso passar a próxima hora só acariciando ele e recebendo afeto de volta, com as patinhas dele amassando minha roupa, como se estivesse me fazendo um pãozinho. 
+                    </p>
+                </section>
+                <section>
+                    <h3>Academia</h3>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em terceiro lugar, gosto de ir para a academia, sinto que quando estou com meus fones, carregando pesos que meu cérebro julgariam impossíveis, me faz sentir mais contente comigo mesma, principalmente quando vejo os resultados fisicos e emocionais que isso me trás, é um dos sentimentos pelo qual acredito que vale a pena viver.
+                    </p>
+                </section>
+            </div>
         </main>
     </div>
-
+    <script src="main.js"></script>
 </body>
 
 </html>

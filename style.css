@@ -1,40 +1,69 @@
-/* cor de fundo, tipo de letra e cor do texto */
-body {
-  color: white;
-  background-color: black;
+:root {
+  --white: #fff;
+  --dark:  #000;
+  --blue1: #20beda;
+  --blue2: #298ed1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* cor de fundo, tipo de letra e cor do texto */
+body {
+  min-height: 100vh;
+  color: var(--white);
+  background-color: var(--dark);
+  transition: .5s;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-theme="dark"] {
+  --white: #000;
+  --dark: #fff;
+}
+
 /* justificação do cabeçalho */
 ul {
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
+  list-style-type:none;
   padding: 16px;
 }
 /* cor dos textos tipo a */
 a {
-  color: white;
+  color: var(--dark);
   text-decoration: none;
 }
 /* Cor fixa do link acessado */
 .navegacao a.linkAtivo {
-  color: #298ed1;
+  color: var(--blue2);
 }
+
+.navegacao {
+  display: -moz-grid-line;
+  padding: 50px;
+}
+
 /* tamanho da fonte dos links do cabeçalho  */
 nav a {
   font-size: 20px;
+  color: var(--blue2)
 }
 /* cor dos links do cabeçalho ao passar o mouse por cima */
 nav a:hover {
-  color: #298ed1;
-}
+  color: var(--blue1);
+} 
 /* justificação da imagem do cabeçalho */
 header img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #20beda;
+  border: 5px solid var(--blue1);
 }
 /* alinhamento do header */
 .center {
@@ -42,18 +71,20 @@ header img {
 }
 /* cor dos textos h1 */
 .center h1 {
-  color: #20beda;
+  color: var(--blue1);
 }
 /* Alinhamento do texto justificado */
 p {
   text-align: justify;
+}
+.effect-header, .effect-top, .effect-middle {
+  visibility: hidden;
 }
 /* justificação dos logos */
 footer img {
   width: 40px;
   height: 40px;
 }
-
 footer {
   display: flex;
   justify-content: center;
@@ -67,16 +98,66 @@ footer a {
 footer i {
   margin: 20px;
   text-align: center;
-  color: #ececec;
+  color: var(--blue1);
 }
 /* cor e alinhamento dos textos principais */
 footer p {
   margin-top: 2px;
   text-align: center;
-  color: #757879;
 }
 /* distancia dos links do cabeçalho */
 .container {
   padding: 0px 50px;
-  background-color: linear-gradient(rgba(255, 255, 255, 0));
+  text-align: center;
 }
+.group {
+  display: flex;
+  padding: 3%;
+  max-width: 100%;
+}
+.group > section {
+  flex: 1 1 800px;
+  margin: 10px;
+}
+.trilho {
+  width: 60px;
+  height: 30px;
+  background-color: var(--blue1);
+  border-radius: 150px;
+  position: relative;
+  left: 48%;
+}
+.trilho .indicador {
+  width: 30px;
+  height: 30px;
+  background-color: var(--dark);
+  border-radius: 50%;
+  transform: scale(.9);
+  position: absolute;
+  left: 0px;
+  transition: .5s;
+}
+.indicador:hover {
+  background-color: var(--dark);
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.trilho.dark {
+  background-color: var(--blue2);
+}
+
+.trilho.dark .indicador{
+  left: 29.5px;
+  background-color: var(--white);
+}
+
+body.dark {
+  background-color: var(--white);
+}
+
+body.dark .container{
+  color: var(--dark);
+}
+
+
